@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="mağaza, steam, epic, itch.io, yerli, oyun, oyun Mağazası">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <title>Emaze</title>
+
+
+   
+
+	<!-- CSS
+	================================================== -->
+	<!-- Vendor CSS -->
+	<link href="assets/vendor/magnific-popup/css/magnific-popup.css" rel="stylesheet">
+	<link href="assets/vendor/slick/css/slick.css" rel="stylesheet">
+	<link href="assets/vendor/nanoscroller/css/nanoscroller.css" rel="stylesheet">
+
+
+	<!-- Template CSS-->
+	<link href="assets/css/style-2.css" rel="stylesheet">
+
+	<!-- Custom CSS-->
+	<link href="assets/css/custom.css" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+    
+
+
+
+<div class="navbar">
+    <img class="logo" src="logo.png"/>
+    <ul>
+        <li><a href="index.html">HOME PAGE</a></li>
+        <li><a href="games-page.html">GAMES</a></li>
+        <li><a href="contacts.html">SOCIAL MEDIA</a></li>
+        <li><a href="about-me.html">ABOUT ME</a></li>
+        <li><a href="home-launcher.html">LAUNCHER</a></li>
+    </ul>
+
+</div>  
+
+
+<div class="entery">
+         <div id="title" style="text-align:center">
+                <h2 style="margin-top: 11%; color: #c7090c;">emaze unity'ye döndüğünde açılacak</h2>
+                <a href="" style="content:\n"></a>
+                <h2>Bu site emaze'nin yokluğuna dayanamadı ve kapandı. Ama emaze geldiğinde açılacağından eminim. Saygılarla...</h2>-->
+
+                <a href="http://yandex.com/games/app/198592">
+                <button class="btnMc">To Play Minicraft Duello</button>
+                </a>
+
+                <a href="http://emaze.cf/home-launcher.html">
+                   <button style="margin-left: 2%;" class="btnMc">To Download KelimEzber</button>
+                </a>
+
+
+                <button id="launch-app">Launch App</button>
+
+            
+
+                
+                <a href="">
+                <div id="Btn" class="btn">
+                    <h4>Download Karabi</h4>
+                </div> 
+                </a>
+                
+          </div>
+          
+          <div class="img">
+              <img class="moon" src="images/coding.png"/>
+         </div>
+         
+</div>     
+
+
+
+<script>
+
+
+
+  
+
+
+
+
+  // Get a reference to the button
+  const button = document.getElementById('launch-app');
+
+  // Add an event listener to the button that listens for the 'click' event
+  button.addEventListener('click', function() {
+    // Use the 'child_process' module of Node.js to execute a command that launches the application
+    const { exec } = require('child_process');
+    exec('start ""C:\Program Files (x86)\Termo Games\Termo Game Launcher\Termo Games Launcher.exe""');
+  });
+
+
+
+
+
+
+
+var btnKarabiDowload=document.getElementById("Btn");
+	btnKarabiDowload.onclick=function()
+    {
+		window.alert("TR: Şimdilik oyunu indiremezsiniz ama kapalı beta için 'Games' bölümüne bakabilirsiniz. \nEN: You can't download the game for now, but you can check the 'Games' section for closed beta.");
+    }
+
+    var mcDuelleo=document.getElementById("mcDu");
+	mcDuelleo.onclick=function()
+    {
+        window.location = "http://www.google.com.tr/";
+    }
+
+</script>
+
+
+</body>
+
+</html>

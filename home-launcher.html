@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" translate="no">
+    <title>Launcher</title>
+</head>
+<body>
+<div class="navbar">
+    <img class="logo" src="logo.png"/>
+    <ul>
+        <!--
+        <li><a href="index.html">HOME PAGE</a></li>
+        <li><a href="games-page.html">GAMES</a></li>
+        <li><a href="contacts.html">SOCIAL MEDIA</a></li>
+        <li><a href="about-me.html">ABOUT ME</a></li>
+        <li><a href="home-launcher.html">LAUNCHER</a></li>
+        -->
+        
+    </ul>
+</div>   
+
+<div class="entery">
+         <div id="games-title">
+                <h2>Launcher</h2>             
+          </div>
+         
+</div>
+<div class="games">   
+    <div class="launcher-member">
+   
+            <img style="margin-bottom: -20px;" class="game-img" src="images/KelimEzber.png">
+            <h3>KelimEzber</h3>
+            <a href="KelimEzber.apk">
+            <button class="btn3">Download KelimEzber</button>
+            </a>
+        
+    </div> 
+</div>
+
+
+
+<script>
+    function basildi (param1) {
+      gizleGoster();
+      alert(param1);
+    }
+
+    function gizleGoster() {
+    var x = document.getElementById("warningPanel");
+ 
+    x.style.display = "block";
+    
+
+ 
+}
+
+window.onload = function () {
+    var x = document.getElementById("warningPanel");
+    x.style.display = "none";
+ 
+    
+  };
+
+</script>
+     
+
+</body>
+</html>

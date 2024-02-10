@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" translate="no">
+    <title>Games</title>
+</head>
+<body>
+<div class="navbar">
+    <img class="logo" src="logo.png"/>
+    <ul>
+        <li><a href="index.html">HOME PAGE</a></li>
+        <li><a href="games-page.html">GAMES</a></li>
+        <li><a href="contacts.html">SOCIAL MEDIA</a></li>
+        <li><a href="about-me.html">ABOUT ME</a></li>
+        <li><a href="home-launcher.html">LAUNCHER</a></li>
+    </ul>
+</div>   
+
+<div id="warningPanel" class="alert" oncl>
+  
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>Warning! </strong> <a id="alertText">This game is not finished yet. / Bu oyunun yapımı daha bitmedi.</a> 
+</div>
+
+<div class="entery">
+         <div id="games-title">
+                <h2>Emaze's Games</h2>             
+          </div>
+         
+</div>
+<div class="games">  
+    
+    <div style="width: 550px;height: 565px" id="gamesMember" class="games-member">
+        <img style="height: 295px;width: 295px" class="game-img" src="images/karabi.png">
+        <h3 style="font-size: 270%;">Karabi [BETA]</h3>
+        <h6 style="font-size: 110%;padding-bottom: 2%;">MULTIPLAYER PC GAME</h6>
+        <h6 style="font-size: 110%;padding-bottom: 5%;">Release Date: 'Development Stopped'</h6>
+
+        <a style="color: rgb(65, 65, 65);" href="karabi-page.html">
+        <button style="font-size: 30px;;width: 50%;height: 12%;" class="btn2">Download</button>
+        </a>
+    
+        <b>&nbsp;</b>
+        <b>&nbsp;</b>
+        <b>&nbsp;</b>
+        <b>&nbsp;</b>
+        
+        <a href="#">
+        <button style="font-size: 30px;width: 15%;height: 12%;" onclick="gizleGoster(0)" class="infoKarabiBtn">Info</button>
+        </a>
+    </div> 
+
+
+    <div id="gamesMember" class="games-member">
+        <img class="game-img" src="images/family-union.png">
+        <h3>Family Union | Magara Jam #4</h3>
+        <h6>JAM GAME (PC)</h6>
+        <h6>Release Date: 19/05/2022</h6>
+        <a href= "https://emazee.itch.io/family-union">
+        <button class="btn2">Download</div>
+        </a>
+    </div> 
+
+    <div id="gamesMember" class="games-member">
+        <img class="game-img" src="images/theDoctorLogo.png">
+        <h3>The Doctor | Gang7z Jam #1</h3>
+        <h6>JAM GAME (PC)</h6>
+        <h6>Release Date: 05/08/2022</h6>
+        <a href="tgl-page.html">
+        <button class="btn2">Download</button>
+        </a>
+    </div> 
+
+    <div id="gamesMember" class="games-member">
+        <img class="game-img" src="images/KelimEzber.png">
+        <h3>KelimEzber</h3>
+        <h6>ANDROID APP</h6>
+        <h6>Release Date: 'Suspicious'</h6>
+    
+        <a href="#">
+        <button onclick="gizleGoster(1)"  class="btn2">Download</button>
+        </a>
+
+    </div> 
+
+    <div id="gamesMember" class="games-member">
+        <img class="game-img" src="images/clock.png">
+        <p></p>
+        <h3>İftar Sayacı</h3>
+        <h6>WINDOWS APP</h6>
+        <h6>Release Date: 12/04/2022</h6>
+        <a href= "iftar-sayaci-page.html">
+        <p></p>
+        <p></p>
+        <button class="btn2">Go to Page</button>
+        </a>
+    </div> 
+
+</div>
+
+
+
+<script>
+    function basildi (param1) {
+      gizleGoster();
+      alert(param1);
+    }
+
+    function gizleGoster(itemTur) {
+
+        
+        if (itemTur == 0)/*0 = Karabi*/ {
+            var x = document.getElementById("warningPanel");
+            var alertTxt = document.getElementById("alertText");
+ 
+            x.style.display = "block";
+            alertTxt.textContent = "The development of this game has been delayed until August 2023. But it is currently playable. / Bu oyunun geliştirilmesi Ağustos 2023'e kadar ertelendi. Ama şu anda oynanabilir durumdadır.";
+        } else if (itemTur == 1)/*1 = KelimEzber*/ {
+            window.location.href = "http://emaze.cf/KelimEzber.apk";
+
+            var x = document.getElementById("warningPanel");
+            var alertTxt = document.getElementById("alertText");
+ 
+            x.style.display = "block";
+            alertTxt.textContent = "This app is waiting for account in Play Store... / Bu uygulama Play Store'da hesap bekliyor...";
+        } else {
+
+        }
+
+
+ 
+}
+
+window.onload = function () {
+    var x = document.getElementById("warningPanel");
+    x.style.display = "none";
+ 
+    
+  };
+
+</script>
+     
+
+</body>
+</html>
